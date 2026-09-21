@@ -1,288 +1,40 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexander Guido | Mechanical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">AG</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Research & Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
+  <header>
+    <nav>
+      <div class="logo">Alexander Guido</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About & Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <div class="hero-badge">US Citizen • Based in Atlanta, GA[cite: 1]</div>
-      <h1 class="hero-title">Alexander Guido</h1>
-      <h2 class="hero-subtitle">Mechanical Engineering & Mathematics at Georgia Tech[cite: 1]</h2>
-      <p class="hero-description">
-        Specializing in high-precision CAD modeling, finite element analysis (FEA), vehicle kinematics, and rapid prototyping for advanced physics and aerospace applications[cite: 1].
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Explore Projects</a>
-        <a href="https://linkedin.com/in/alexander-guido" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn[cite: 1]</a>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Alexander Guido</h1>
+        <p>Mechanical Engineering Student at Georgia Tech specializing in structural FEA, vehicle kinematics, and hardware prototyping.</p>
+        <a href="projects.html" class="btn">View My Projects</a>
       </div>
-    </div>
-  </section>
-
-  <!-- About / Bio -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="bio-text">
-        I am a Mechanical Engineering undergraduate minoring in Mathematics at Georgia Tech (3.93 Overall / 4.00 Major GPA)[cite: 1]. My engineering focus centers on bridging theoretical modeling with hands-on mechanical execution—ranging from designing telescope scale models for PeV neutrino detection at Frisco Peak to optimizing off-road vehicle suspension kinematics and building experimental energy systems[cite: 1].
-      </p>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <div class="grid grid-2">
-        
-        <div class="card card-highlight">
-          <div class="card-header">
-            <h3>Georgia Institute of Technology</h3>
-            <span class="date-badge">Expected May 2028[cite: 1]</span>
-          </div>
-          <p class="card-subtitle">B.S. in Mechanical Engineering, Minor in Mathematics[cite: 1]</p>
-          <ul class="card-bullets">
-            <li><strong>GPA:</strong> 3.93 / 4.00 (Major GPA: 4.00 / 4.00)[cite: 1]</li>
-            <li><strong>Leadership & Affiliations:</strong> Theta Chi Fraternity (Assistant Rush Chair)[cite: 1]</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <h3>The Westminster Schools</h3>
-            <span class="date-badge">Aug 2021 – May 2025[cite: 1]</span>
-          </div>
-          <p class="card-subtitle">High School Diploma[cite: 1]</p>
-          <ul class="card-bullets">
-            <li><strong>GPA:</strong> 100.9 / 100[cite: 1]</li>
-            <li><strong>Honors:</strong> Westminster Innovation Fellow[cite: 1]</li>
-          </ul>
-        </div>
-
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Alexander Guido">
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Research & Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Featured Research & Projects</h2>
-      <div class="grid grid-1">
-
-        <!-- Project 1 -->
-        <article class="project-card">
-          <div class="project-content">
-            <div class="project-tag">Research & Mechanical Design</div>
-            <h3>Trinity Neutrino Observatory VIP — Mechanical Design Lead[cite: 1]</h3>
-            <p class="project-org">Georgia Tech | Aug 2026 – Present[cite: 1]</p>
-            <ul class="project-bullets">
-              <li>Engineered high-precision 3D CAD models and structural assemblies in SolidWorks for a scale model of the Trinity One Telescope and Demonstrator to detect petaelectronvolt (PeV) astrophysical neutrinos on site in Frisco Peak, Utah[cite: 1].</li>
-              <li>Applied mechanical prototyping techniques, tolerance analysis, and FEA (ANSYS) to ensure structural integrity of next-generation particle detection instruments[cite: 1].</li>
-              <li>Served on active observation crew taking detector shifts for the Trinity Demonstrator telescope, operating particle detection hardware and monitoring real-time telemetry data for PeV neutrino events[cite: 1].</li>
-            </ul>
-            <div class="tag-list">
-              <span class="tag">SolidWorks</span>
-              <span class="tag">ANSYS FEA</span>
-              <span class="tag">Tolerance Analysis</span>
-              <span class="tag">Telemetry Data</span>
-              <span class="tag">Particle Detectors</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card">
-          <div class="project-content">
-            <div class="project-tag">Nuclear Physics Research</div>
-            <h3>GSU Nuclear Physics Dept — Research Intern[cite: 1]</h3>
-            <p class="project-org">Georgia State University | May 2022 – Aug 2025[cite: 1]</p>
-            <ul class="project-bullets">
-              <li>Assembled and calibrated cosmic ray detector hardware utilized in atmospheric and environmental physics research[cite: 1].</li>
-              <li>Developed Python scripts to analyze 20 years of cosmic ray data, modeling Earth-Moon orbital positioning and particle transmission rates[cite: 1].</li>
-              <li>Engineered a particle-based soil moisture detector by evaluating proton transmission rates through varied soil densities[cite: 1].</li>
-            </ul>
-            <div class="tag-list">
-              <span class="tag">Python</span>
-              <span class="tag">Hardware Calibration</span>
-              <span class="tag">Cosmic Ray Detection</span>
-              <span class="tag">Data Analytics</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project-card">
-          <div class="project-content">
-            <div class="project-tag">Independent Study</div>
-            <h3>Wind Turbine Engineering & Aerodynamic Study[cite: 1]</h3>
-            <p class="project-org">Lead Designer & Engineer | May 2024 – Aug 2025[cite: 1]</p>
-            <ul class="project-bullets">
-              <li>Engineered and hand-fabricated a custom-built prototype wind turbine using repurposed electric hoverboard motors and custom PVC housing, generating 15–20 W of continuous electrical power[cite: 1].</li>
-              <li>Graphed current and power curves across varying fluid velocity conditions to evaluate electrical output efficiency[cite: 1].</li>
-              <li>Authored a comprehensive 30-page research paper detailing experimental design, mathematical modeling, and aerodynamic blade optimization[cite: 1].</li>
-            </ul>
-            <div class="tag-list">
-              <span class="tag">Prototyping</span>
-              <span class="tag">Power Modeling</span>
-              <span class="tag">Aerodynamics</span>
-              <span class="tag">MATLAB / Excel</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Technical Experience Section -->
-  <section id="experience" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Engineering & Leadership Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h4>Georgia Tech Off-Road Racing</h4>
-            <span class="timeline-date">Jan 2026 – Present[cite: 1]</span>
-          </div>
-          <p class="role-title">Suspension Design Engineer[cite: 1]</p>
-          <ul>
-            <li>Designed off-road race vehicle suspension geometry using SolidWorks/CAD, optimizing kinematic performance, shock absorption, and vehicle rollover stability for high-impact obstacle courses[cite: 1].</li>
-            <li>Performed mechanical stress and durability analyses on suspension components to withstand harsh racing environments[cite: 1].</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h4>Georgia Tech Maker Spaces</h4>
-            <span class="timeline-date">Jan 2026 – Present[cite: 1]</span>
-          </div>
-          <p class="role-title">Prospective Peer Instructor[cite: 1]</p>
-          <ul>
-            <li>Completing advanced technical training on digital fabrication machinery, including FDM/SLA 3D printers, laser cutters, and CNC routers, with emphasis on calibration and workshop safety[cite: 1].</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h4>Georgia Tech Solar Racing</h4>
-            <span class="timeline-date">Aug 2025 – Dec 2025[cite: 1]</span>
-          </div>
-          <p class="role-title">Mechanical Subteam Engineer[cite: 1]</p>
-          <ul>
-            <li>Fabricated carbon-fiber composite and structural housings for the race car, contributing to a 3rd-place finish in the Formula Sun Grand Prix[cite: 1].</li>
-            <li>Developed CAD models for drivetrain assemblies, ensuring integration between mechanical and electrical sub-systems[cite: 1].</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h4>Southern Cross Aviation</h4>
-            <span class="timeline-date">Jul 2024 – Aug 2025[cite: 1]</span>
-          </div>
-          <p class="role-title">Summer Intern — Fort Lauderdale, FL[cite: 1]</p>
-          <ul>
-            <li>Directed order fulfillment workflows for internal engineering requests and client parts procurement[cite: 1].</li>
-            <li>Coordinated materials and dispatch logistics alongside shipping teams to ensure on-time delivery of thousands of aerospace parts[cite: 1].</li>
-            <li>Cataloged inventory using barcode software to preserve database integrity and audited customer/vendor invoices[cite: 1].</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h4>Westminster Robotics Team (FRC Team 1261)</h4>
-            <span class="timeline-date">Aug 2021 – May 2025[cite: 1]</span>
-          </div>
-          <p class="role-title">Business Team Lead & Fabrication Member[cite: 1]</p>
-          <ul>
-            <li>Secured $10,000+ from corporate sponsors and directed outreach operations for a District Championship Finalist team[cite: 1].</li>
-            <li>Earned three consecutive FIRST Creativity Awards for mechanical design innovation[cite: 1].</li>
-            <li>Machined complex mechanical assemblies, including a custom 4-wheel swerve drive transmission[cite: 1].</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="grid grid-3">
-        
-        <div class="skill-card">
-          <h4>CAD & Simulation[cite: 1]</h4>
-          <ul class="skill-list">
-            <li>SolidWorks[cite: 1]</li>
-            <li>ANSYS (FEA)[cite: 1]</li>
-            <li>Onshape[cite: 1]</li>
-            <li>Fusion 360[cite: 1]</li>
-            <li>MATLAB / Simulink[cite: 1]</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h4>Programming & Math[cite: 1]</h4>
-          <ul class="skill-list">
-            <li>Python[cite: 1]</li>
-            <li>Java (OOP)[cite: 1]</li>
-            <li>C / C++[cite: 1]</li>
-            <li>Microsoft Excel (Data Analytics)[cite: 1]</li>
-            <li>Applied Mathematics[cite: 1]</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h4>Prototyping & Fabrication[cite: 1]</h4>
-          <ul class="skill-list">
-            <li>3D Printing (FDM / SLA)[cite: 1]</li>
-            <li>Laser Cutting & CNC Routing[cite: 1]</li>
-            <li>Carbon-Fiber Composites[cite: 1]</li>
-            <li>Machining (Wood / Metal)[cite: 1]</li>
-            <li>Chinese (Proficient)[cite: 1]</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <footer id="contact" class="footer">
-    <div class="container text-center">
-      <h2>Let's Connect</h2>
-      <p>I am always open to discussing mechanical engineering opportunities, research collaborations, or rapid hardware design.</p>
-      <div class="contact-links">
-        <a href="mailto:axguido8@gmail.com" class="btn btn-primary">axguido8@gmail.com[cite: 1]</a>
-        <a href="https://linkedin.com/in/alexander-guido" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn Profile[cite: 1]</a>
-      </div>
-      <p class="copyright">&copy; 2026 Alexander Guido. Built for GitHub Pages.</p>
-    </div>
+  <footer>
+    <p>&copy; 2026 Alexander Guido. All rights reserved.</p>
   </footer>
 
 </body>
