@@ -2,7 +2,7 @@
 
 Welcome to my personal engineering portfolio repository! This repository hosts the source code for my interactive portfolio website, showcasing my work in mechanical engineering, structural FEA, vehicle kinematics, and physics research.
 
-**Live Site:** [alexander-guido.github.io](https://alexander-guido.github.io) *(replace with your actual GitHub Pages URL)*
+**Live Site:** [alexander-guido.github.io](https://alexander-guido.github.io)
 
 ---
 
