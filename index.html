@@ -3,19 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexander Guido | Mechanical Engineering Portfolio</title>
+  <title>Alexander Guido | Engineering Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <div class="logo">Alexander Guido</div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About & Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <a href="index.html" class="logo-container">
+        <img src="assets/profile.jpg" alt="Alexander Guido" class="logo-avatar" onerror="this.src='https://via.placeholder.com/40'">
+        <span class="logo-text">Alexander Guido</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="projects.html">All Projects Overview</a></li>
+            <li><a href="gsu.html">GSU Cosmic Ray Research</a></li>
+            <li><a href="wind-turbine.html">Wind Turbine Study</a></li>
+            <li><a href="trinity.html">Trinity Observatory VIP</a></li>
+            <li><a href="racing-clubs.html">Georgia Tech Racing Clubs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="experience.html" class="nav-link">Experience ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="aviation.html">Southern Cross Aviation</a></li>
+            <li><a href="peer-instructor.html">GT Maker Spaces Instructor</a></li>
+            <li><a href="theta-chi.html">Theta Chi Leadership</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -23,18 +43,64 @@
   <main>
     <section class="hero">
       <div class="hero-text">
-        <h1>Hi, I'm Alexander Guido</h1>
-        <p>Mechanical Engineering Student at Georgia Tech specializing in structural FEA, vehicle kinematics, and hardware prototyping.</p>
-        <a href="projects.html" class="btn">View My Projects</a>
+        <h1>High-Impact Hardware & Systems Engineer</h1>
+        <p>Mechanical Engineering Undergrad at Georgia Tech (3.93 GPA). Passionate about high-speed vehicle design, structural FEA, rapid hardware prototyping, and physics research.</p>
+        <div>
+          <a href="projects.html" class="btn">Explore Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
       </div>
       <div class="hero-image">
-        <img src="images/profile.jpg" alt="Alexander Guido">
+        <img src="assets/profile.jpg" alt="Alexander Guido" onerror="this.src='https://via.placeholder.com/260'">
       </div>
     </section>
+
+    <div class="container timeline-section">
+      <h2 class="page-title">Engineering Journey & Milestone Timeline</h2>
+      <p class="page-subtitle">From early hands-on curiosity to advanced structural analysis and aerospace research.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">August 2024 - Present</div>
+          <div class="timeline-content">
+            <h3>Georgia Tech ME Undergrad & Maker Spaces Instructor Candidate</h3>
+            <p>Advancing mechanical engineering studies (4.00 Major GPA). Leading CAD/FEA efforts for the Trinity Observatory VIP, designing suspension systems for GT Off-Road Racing, and training peers on CNC mills, 3D printers, and shop equipment.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2023 - August 2024</div>
+          <div class="timeline-content">
+            <h3>Research Intern | Georgia State University Cosmic Ray Lab</h3>
+            <p>Assembled atmospheric particle detectors, built a soil moisture detector using proton transmission, and analyzed 20 years of cosmic ray data using custom Python scripts.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 - 2024</div>
+          <div class="timeline-content">
+            <h3>Independent Study | Wind Turbine Aerodynamic Prototype</h3>
+            <p>Designed and fabricated a prototype wind turbine powered by hoverboard motors and custom housing, validating 15–20W continuous power output in a 30-page research thesis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Early Spark</div>
+          <div class="timeline-content">
+            <h3>First Principles & Hands-On Experimentation</h3>
+            <p>Built first pneumatic/combustion prototypes from hardware store materials. Sparked a lifelong commitment to understanding the physics behind real-world physical systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Alexander Guido. All rights reserved.</p>
+    <p>&copy; 2026 Alexander Guido. Built with clean HTML/CSS on GitHub Pages.</p>
   </footer>
 
 </body>
