@@ -1,52 +1,35 @@
-# Alexander Guido | Engineering Portfolio
+# Alexander Guido — Engineering Portfolio
 
-Welcome to my personal engineering portfolio repository! This repository hosts the source code for my interactive portfolio website, showcasing my work in mechanical engineering, structural FEA, vehicle kinematics, and physics research.
+A static, dependency-free engineering portfolio for GitHub Pages. The production site is [aguido8.github.io/portfolio/](https://aguido8.github.io/portfolio/). The engineering rebuild is intended for review before merging into main.
 
-**Live Site:** [aguido8.github.io/portfolio/](aguido8.github.io/portfolio/)
+## Preview locally
 
----
+From the repository root:
 
-## 🛠️ Tech Stack & Tools
+    python3 -m http.server 8000
 
-* **CAD & Simulation:** SolidWorks, ANSYS (FEA), Onshape, Fusion 360, MATLAB / Simulink
-* **Programming & Data:** Python, Java (OOP), C/C++, Microsoft Excel
-* **Prototyping & Fabrication:** 3D Printing (FDM/SLA), Laser Cutting, CNC Routing, Carbon-Fiber Composites, Precision Machining
+Open http://localhost:8000/ in a browser. No package installation, build step or backend is required. All internal paths are relative so the site also works below /portfolio/ on GitHub Pages.
 
----
+## Structure
 
-## 🔬 Featured Projects
+- index.html — recruiter-friendly homepage and selected work
+- projects.html — case-study directory
+- trinity.html — telescope CAD, structural simulation, Monte Carlo/optics, FEA, prototypes and operations
+- racing-clubs.html — Off-Road suspension, shock reducer, joint sizing and FEA
+- me2110.html — autonomous robot requirements, mechanical integration, manufacturing, programming and failures
+- wind-turbine.html — prototype, preliminary CFD, measurements and paper
+- gsu.html — particle detection and computational research
+- experience.html, aviation.html, frc.html, peer-instructor.html, theta-chi.html — experience and affiliations
+- about.html, resume.html, contact.html — education, skills, printable résumé and contact
+- styles.css — shared responsive design system
+- assets/ — original images preserved; additional evidence slots listed in PORTFOLIO_REVIEW.md
 
-### 🌌 Trinity Neutrino Observatory VIP
-* **Role:** Research Lead & Mechanical Designer
-* **Focus:** Precision SolidWorks 3D CAD modeling and ANSYS FEA structural analysis for scale models of the Trinity One Telescope and Demonstrator deployed at Frisco Peak, Utah.
-* **Key Work:** Performed tolerance analysis, evaluated structural integrity under extreme conditions, and operated particle detection hardware on live observation shifts.
+All case studies use ordinary static HTML. To add a figure, replace its documentation-slot figure with the example markup in PORTFOLIO_REVIEW.md. The placeholders intentionally make no external image requests.
 
-### 🏎️ Georgia Tech Off-Road Racing — Suspension System
-* **Role:** Suspension Design Engineer
-* **Focus:** Off-road vehicle suspension geometry design using SolidWorks to optimize kinematic performance, shock absorption, and rollover stability.
-* **Key Work:** Conducted durability and mechanical stress analyses on suspension linkages built for high-impact racing environments.
+## Editorial principles
 
-### 🌬️ Wind Turbine Aerodynamic Study & Prototype
-* **Role:** Independent Lead Engineer
-* **Focus:** Design, assembly, and power testing of a custom prototype wind turbine utilizing repurposed hoverboard motors and custom PVC housing.
-* **Key Work:** Generated 15–20 W of continuous power, graphed voltage/power efficiency curves, and authored a 30-page research paper detailing aerodynamic blade optimization.
+Use the November 2026 résumé for role names, dates and verified results. Distinguish measured results from design targets, illustrative diagrams from released CAD, and ongoing analysis from validated performance. Do not upload proprietary team files or unpublished research without approval. See the review checklist for evidence gaps and image replacements.
 
-### ⚛️ GSU Cosmic Ray & Particle Detection Research
-* **Role:** Research Intern
-* **Focus:** Hardware assembly and calibration of atmospheric cosmic ray detectors.
-* **Key Work:** Authored Python scripts analyzing 20 years of cosmic ray transmission data (modeling Earth-Moon orbital positioning) and developed a proton transmission-based soil moisture detector.
+## Deployment
 
----
-
-## 🎓 Education & Background
-
-* **Georgia Institute of Technology** — B.S. in Mechanical Engineering, Minor in Mathematics (Expected May 2028)
-  * **GPA:** 3.93 / 4.00 (Major GPA: 4.00 / 4.00)
-  * **Campus Involvement:** GT Off-Road Racing, GT Maker Spaces Peer Instructor Candidate, GT Solar Racing, Theta Chi Fraternity
-
----
-
-## 📫 Connect with Me
-
-* **Email:** [axguido8@gmail.com](mailto:axguido8@gmail.com)
-* **LinkedIn:** [linkedin.com/in/alexander-guido](https://linkedin.com/in/alexander-guido)
+Review the draft pull request and preview the branch locally. Merge to main only when the content and assets are approved. No deployment settings or workflows are changed by this redesign.
